@@ -398,11 +398,6 @@ img {
     fill: currentColor;
 }
 
-/*.company-list-link:hover .company-list-icon,
-.company-list-link:focus .company-list-icon {
-    fill: var(--pressed-state);
-}*/
-
 .company-list-link:hover,
 .company-list-link:focus {
     color: var(--pressed-state);
