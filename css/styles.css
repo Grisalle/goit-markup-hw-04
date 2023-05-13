@@ -161,12 +161,16 @@ img {
     color: var(--pressed-state);
 }
 
-/* Effective Solutions for Your Business */
+/* Hero */
 
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
     background-color: var(--background-dark);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-bg.jpg);
+    background-size: 1440px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hero-descr {
@@ -215,6 +219,17 @@ img {
 
 .principle-item {
     flex-basis: calc((100% - 72px) / 4);
+}
+
+.principle-icon-container {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-light);
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .principle-title {
@@ -310,6 +325,75 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--description-color);
+    margin-bottom: 8px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--pressed-state);
+}
+
+/* Customers */
+
+.customers-section {
+    background-color: var(--background-white);
+}
+
+.companies-icon-title {
+    text-align: center;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+}
+
+.company-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.company-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.company-list-icon {
+    fill: #8E8F99;
+}
+
+.company-list-link:hover .company-list-icon,
+.company-list-link:focus .company-list-icon {
+    fill: var(--pressed-state);
+}
+
+.company-list-link:hover,
+.company-list-link:focus {
+    border: 1px solid var(--pressed-state);
 }
 
 /* Footer */
@@ -318,6 +402,14 @@ img {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--background-dark);
+}
+
+.footer-container-list {
+    display: flex;
+}
+
+.footer-main {
+    margin-right: 120px;
 }
 
 .logo-footer {
@@ -333,6 +425,35 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+}
+
+.footer-icon-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: #31D0AA;
 }
 
 /* PORTFOLIO */
@@ -368,6 +489,7 @@ img {
     color: #FFFFFF;
     background-color: var(--pressed-state);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-img-list {
@@ -379,6 +501,11 @@ img {
 
 .portfolio-img-item {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.portfolio-img-item:hover,
+.portfolio-img-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-img-title {
@@ -393,6 +520,12 @@ img {
 .portfolio-img-descr-container {
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-img-descr-container:hover,
+.portfolio-img-descr-container:focus {
+    border: 1px solid #F4F4FD;
     border-top: none;
 }
 
