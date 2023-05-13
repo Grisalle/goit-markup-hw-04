@@ -75,9 +75,10 @@ img {
     --primary-brand: #4D5AE5;
     --pressed-state: #404BBF;
     --title-color: #2E2F42;
+    --title-color-background-dark: #FFFFFF;
     --description-color: #434455;
     --social-icon: #F4F4FD;
-    --title-color-background-dark: #FFFFFF;
+    --company-icon: #8e8f99;
 }
 
 /* Top Line */
@@ -370,7 +371,7 @@ img {
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
@@ -388,21 +389,23 @@ img {
     align-items: center;
     width: 168px;
     height: 88px;
+    color: var(--company-icon);
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 
 .company-list-icon {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 
-.company-list-link:hover .company-list-icon,
+/*.company-list-link:hover .company-list-icon,
 .company-list-link:focus .company-list-icon {
     fill: var(--pressed-state);
-}
+}*/
 
 .company-list-link:hover,
 .company-list-link:focus {
+    color: var(--pressed-state);
     border: 1px solid var(--pressed-state);
 }
 
